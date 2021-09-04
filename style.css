@@ -1,0 +1,104 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 700px;
+	padding: 1rem;
+	border-radius: 5px;
+	background-color: #ebecf0;
+	box-shadow: 3px 3px 5px #babecc, -5px -5px 10px #fff;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+strong {
+	color: #444;
+	letter-spacing: 1px;
+	margin-bottom: 1rem;
+	font-size: 1.7rem;
+	margin: 1rem;
+}
+
+::placeholder {
+	letter-spacing: 1px;
+	font-size: 1rem;
+}
+
+input {
+	background-color: #f0f0f0;
+	border: none;
+	box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+	padding: 0.9rem;
+	font-size: 1.2rem;
+	border-radius: 50px;
+	color: #777;
+	width: 500px;
+	margin: 0.5rem auto;
+}
+
+input:focus {
+	outline: none;
+	box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+}
+
+button {
+	width: 130px;
+	margin: 1rem;
+	background-color: transparent;
+	color: #61677c;
+	box-shadow: 3px 3px 5px #babecc, -4px -4px 10px #fff;
+	outline: 0;
+	cursor: pointer;
+	padding: 0.5rem;
+	border-radius: 50px;
+	border: none;
+	margin-top: 1.5rem;
+	font-size: 1.3rem;
+}
+
+button:hover,
+button:active {
+	box-shadow: inset 2px 2px 3px #babecc, inset -2px -2px 3px #fff;
+}
+
+#result {
+	margin: 1rem;
+	color: #1eae98;
+	font-weight: 900;
+	font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 700px) {
+	.container {
+		width: 600px;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.container {
+		width: 95%;
+	}
+	input {
+		width: 80%;
+	}
+	strong {
+		font-size: 1.15rem;
+	}
+	button {
+		font-size: 1rem;
+		margin: 1.5rem 1rem;
+		width: 90px;
+	}
+}
